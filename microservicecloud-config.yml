@@ -1,13 +1,11 @@
-server: 
-  port: 3344 
-  
 spring:
-  application:
-    name:  microservicecloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/killdrsa/microservicecloud-config.git #GitHub上面的git仓库名字
- 
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8201
 
+---
+server:
+  port: 8202
