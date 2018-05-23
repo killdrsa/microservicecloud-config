@@ -8,9 +8,11 @@ spring:
   profiles: dev
   application:
     name: config-dev
+id: 77
 ---
 
 spring:
   profiles: tex
   application:
     name: config-tex
+id: 88
